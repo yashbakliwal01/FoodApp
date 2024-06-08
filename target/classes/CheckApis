@@ -1,0 +1,79 @@
+Basic Auth:
+Username:  FoodService
+Password:  Food123
+
+#1
+GETMAPPING
+URL: http://localhost:8080/api/foodApp/login
+RESPONSE: Login Successful
+
+------------------------------------------------------------------------------
+
+#2 
+GetMapping
+URL: http://localhost:8080/api/foodApp/getallfoods
+Response:
+[
+    {
+        "id": 1,
+        "name": "Pizza",
+        "description": "Delicious cheese pizza"
+    },
+    {
+        "id": 2,
+        "name": "Burger",
+        "description": "Tasty and Crispy Burger"
+    },
+    {
+        "id": 3,
+        "name": "Sushi",
+        "description": "Fresh sushi with salmon"
+    },
+    {
+        "id": 4,
+        "name": "FrenchFries",
+        "description": "Peri Peri one are too spicy and crispy"
+    },
+    {
+        "id": 5,
+        "name": "Salad",
+        "description": "Fresh green salad"
+    }
+]
+
+------------------------------------------------------------------------------
+#3
+GETMAPPING:
+URL: http://localhost:8080/api/foodApp/food/4
+RESPONSE:
+{
+    "id": 4,
+    "name": "FrenchFries",
+    "description": "Peri Peri one are too spicy and crispy"
+}
+------------------------------------------------------------------------------
+#4
+POSTMAPPING
+URL:  http://localhost:8080/api/foodApp/createFood
+RESPONSE: 
+{
+    "id": 6,
+    "name": "Pasta",
+    "description": "Italian pasta with tomato sauce"
+}
+----------------------------------------
+#5
+PUTMAPPING
+URL: http://localhost:8080/api/foodApp/updateFood/1
+RESPONSE:
+{
+    "id": 1,
+    "name": "Pizza Margherita",
+    "description": "Cheese pizza with tomatoes and basil"
+}
+-------------------------------------
+#6
+DELETEMAPPING
+URL: http://localhost:8080/api/foodApp/deleteFood/1
+RESPONSE:
+
