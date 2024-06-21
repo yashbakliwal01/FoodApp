@@ -5,7 +5,7 @@
     <groupId>com.example</groupId>
     <artifactId>foodapp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>jar</packaging> <!-- Ensure packaging is set to jar -->
 
     <name>foodapp</name>
     <description>Food App</description>
@@ -76,7 +76,7 @@
                     <artifactId>junit-vintage-engine</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
+        </dependency>   
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
